@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<p>Welcome to Reading List</p>
+<div id="authorized" sec:authorize="isAuthenticated()" ><a th:href="@{/readinglist/jjzi}"/>My ReadingList</a></div>
+</body>
+</html>
